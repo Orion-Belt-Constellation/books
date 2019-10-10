@@ -6,25 +6,29 @@
 
 
     <form action="{{route('search')}}" method="POST">
-        {{ csrf_field() }}
+        @csrf
         <div class="input-group">
-            <input id='only_input' type="text"  class="form-control" name="query"
-                   placeholder="Search books" required>
+            <input type="text"  class="form-control" name="query"
+                   placeholder="Search books" >
             <input type="reset" class="btn btn" value="Reset">
             <button type="submit" class="btn btn-primary">Search
             </button>
 
         </div>
 
-             <ul>
-                 @foreach($errors->all()  as $error)
-                     <li>{{$error}}</li>
-                 @endforeach
-             </ul>
+
 
 
 
     </form>
+    <div><ul>
+            @if (count($errors) > 0)
+                @foreach ($errors->all() as $error)
+                    <div class="alert alert-danger">{{ $error }}</div>
+                @endforeach
+            @endif
+        </ul>
+    </div>
 
 
 

@@ -17,8 +17,8 @@ class PagesController extends Controller
         return view('welcome')->with('books',$books);
 
     }
-    public function booksAll() {
-        $books = Book::all()->sortBy('title');
+    public function booksAll() {//it should display all books created by seed
+        $books = Book::all();
         return view('books.index')->with('books',$books);
     }
 
@@ -29,9 +29,11 @@ class PagesController extends Controller
 
     public function search(Request $request)
     {
-        $this->validate(request(),[
-            'title'=>'required'
-    ]);
+        $request->validate([
+            'query' => 'required|max:255'
+           ]);
+        //dd($request)
+        //I have to know what is coming in
         $searchResults = (new Search())
             ->registerModel(Book::class, 'title', 'author')
 

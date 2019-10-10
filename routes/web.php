@@ -21,7 +21,6 @@ Route::get('/', 'PagesController@home');
 
 Route::get('/books/All', 'PagesController@booksAll');
 Route::get('/books/{books}', 'PagesController@show');
-
 Route::any('/search', 'PagesController@search')->name('search');
 Route::get('/books/{books}', 'PagesController@show')->name('books.show');
 
