@@ -143,7 +143,7 @@
         <div class="topnav">
             <a href="/">Home</a>
 
-            <a href="/books/All">All books available</a>
+            <a href="/books/All">Catalog</a>
 
         </div>
         @yield('content')
