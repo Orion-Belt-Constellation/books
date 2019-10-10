@@ -10,141 +10,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    </body>
-    <title>Laravel</title>
+
+    <title>Simple Database</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-        table {
-            width:100%;
 
-        }
-        td {
-            padding:13px;
-        }
-        table,th , td{
-            border: 1px solid red;
-        }
-        .full-height {
-            height: 100vh;
-        }
 
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: #e9e9e9;
-        }
-
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Style the "active" element to highlight the current page */
-        .topnav a.active {
-            background-color: #2196F3;
-            color: white;
-        }
-
-        /* Style the search box inside the navigation bar */
-        .topnav input[type=text] {
-            float: right;
-            padding: 6px;
-            border: none;
-            margin-top: 8px;
-            margin-right: 16px;
-            font-size: 17px;
-        }
-
-        /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-        @media screen and (max-width: 600px) {
-            .topnav a, .topnav input[type=text] {
-                float: none;
-                display: block;
-                text-align: left;
-                width: 100%;
-                margin: 0;
-                padding: 14px;
-            }
-            .topnav input[type=text] {
-                border: 1px solid #ccc;
-            }
-        }
-    </style>
 </head>
-<body>
-<div class="flex-center position-ref full-height">
+<body class="container pt-5">
+<div>
 
-    <div class="content">
-        <div class="title m-b-md">
-           Simple Book Dabatase
+    <div class="content pt-5">
+        <div class="text-center ">
+            <h3>Simple Book Dabatase</h3>
         </div>
 
 
-        <div class="topnav">
-            <a href="/">Home</a>
+        <div>
+         <ul class="nav justify-content-center">
+           <li class="nav px-5">  <a href="/">Home</a></li>
 
-            <a href="/books/All">Catalog</a>
-
+             <li class="nav px-5">   <a href="/books/All" title="All our books">Catalog</a></li>
+         </ul>
         </div>
         @yield('content')
     </div>

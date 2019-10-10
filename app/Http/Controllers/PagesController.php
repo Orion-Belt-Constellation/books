@@ -29,8 +29,11 @@ class PagesController extends Controller
 
     public function search(Request $request)
     {
+        $this->validate(request(),[
+            'title'=>'required'
+    ]);
         $searchResults = (new Search())
-            ->registerModel(Book::class, 'title')
+            ->registerModel(Book::class, 'title', 'author')
 
             ->perform($request->input('query'));
 

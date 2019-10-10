@@ -15,7 +15,7 @@ class ExampleTest extends TestCase
     public function testBasicTest()
     {
         $response = $this->get('/');
-
+        $this->get('/')->assertSee('Simple Book Dabatase');
         $response->assertStatus(200);
     }
 }

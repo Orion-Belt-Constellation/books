@@ -12,9 +12,10 @@
                 <h2>{{ ucfirst($type) }}</h2>
 
                 @foreach($modelSearchResults as $searchResult)
-                    <ul>
-                        <li><a href="{{ $searchResult->url }}">{{ $searchResult->title }}</a></li>
-                    </ul>
+                   <div><a href="{{ $searchResult->url }}">{{ $searchResult->title }}</a>
+                       <span></span></div>
+
+
                 @endforeach
             @endforeach
 

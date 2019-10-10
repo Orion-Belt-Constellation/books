@@ -3,7 +3,7 @@
 
 
 @section('content')
-
+<div>
     <table class="table">
         <tr>
             <th scope="col">Title</th>
@@ -20,4 +20,5 @@
 
 
     </table>
+</div>
 @endsection
