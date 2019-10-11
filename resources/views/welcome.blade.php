@@ -9,8 +9,8 @@
         @csrf
         <div class="input-group">
             <input type="text"  class="form-control" name="query"
-                   placeholder="Search books" >
-            <input type="reset" class="btn btn" value="Reset">
+                   placeholder="Search books" required>
+
             <button type="submit" class="btn btn-primary">Search
             </button>
 
@@ -21,7 +21,8 @@
 
 
     </form>
-    <div><ul>
+    <div>
+        <ul>
             @if (count($errors) > 0)
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger">{{ $error }}</div>

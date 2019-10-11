@@ -11,7 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-    <title>Simple Database</title>
+    <title>Simple Database </title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -25,13 +25,13 @@
 
     <div class="content pt-5">
         <div class="text-center ">
-            <h3>Simple Book Dabatase</h3>
+            <h3>Book Dabatase</h3>
         </div>
 
 
         <div>
          <ul class="nav justify-content-center">
-           <li class="nav px-5">  <a href="/">Home</a></li>
+           <li class="nav px-5">  <a href="/" title="Homepage">Home</a></li>
 
              <li class="nav px-5">   <a href="/books/All" title="All our books">Catalog</a></li>
          </ul>
