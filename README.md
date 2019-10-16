@@ -15,7 +15,7 @@ cd into it
 install compose dependencies/npm
 
 cp .env.example .env
-
+you need a db too :)
 php artisan key:generate
 
 I have seed
